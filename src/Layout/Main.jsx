@@ -3,11 +3,14 @@ import Footer from "../pages/Shared/Footer/Footer";
 import NavBer from "../pages/Shared/NavBer/NavBer";
 
 const Main = () => {
+
+    const noHeaderFooter = location.pathname.includes('login')
+    
     return (
         <div>
-            <NavBer></NavBer>
+           {noHeaderFooter || <NavBer></NavBer>}
             <Outlet></Outlet>
-            <Footer></Footer>
+           {noHeaderFooter || <Footer></Footer>}
         </div>
     );
 };
