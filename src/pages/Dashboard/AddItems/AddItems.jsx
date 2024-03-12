@@ -1,6 +1,6 @@
-import SectionTitle from "../../Components/SectionTitle/SectionTitle";
+import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
 import FaUtensils from "react";
-
+// import useForm from "react-hook-form";
 const AddItems = () => {
     const { register, handleSubmit } = useForm()
     const onSubmit = (data) => {
